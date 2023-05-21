@@ -6,11 +6,11 @@
 /*   By: mromao-d <mromao-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 18:08:46 by mromao-d          #+#    #+#             */
-/*   Updated: 2023/05/21 14:48:35 by mromao-d         ###   ########.fr       */
+/*   Updated: 2023/05/21 14:43:19 by mromao-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "minitalk_bonus.h"
 
 void	ft_send_bin(int pid, char *argv, size_t len)
 {
@@ -37,6 +37,7 @@ void	ft_send_bin(int pid, char *argv, size_t len)
 
 void	sig_handler(void)
 {
+	printf("Recevied signal from server!\n");
 }
 
 int	main(int argc, char *argv[])
